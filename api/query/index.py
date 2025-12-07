@@ -9,7 +9,7 @@ app = FastAPI(title="Book Chatbot API")
 class Query(BaseModel):
     question: str
 
-@app.post("/query")
+@app.post("/")
 def chat(query: Query):
     try:
         answer = generate_answer(query.question)
