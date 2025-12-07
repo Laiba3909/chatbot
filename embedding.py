@@ -8,7 +8,7 @@ load_dotenv()
 
 QDRANT_HOST = os.getenv("QDRANT_HOST")
 QDRANT_API_KEY = os.getenv("QDRANT_API_KEY")
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+OPENAI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # Qdrant client
 qdrant = QdrantClient(
@@ -17,7 +17,7 @@ qdrant = QdrantClient(
 )
 
 # OpenAI client
-openai = OpenAI(api_key=GEMINI_API_KEY)
+openai = OpenAI(api_key=OPENAI_API_KEY)
 
 def search_similar_docs(query, top_k=3):
     # Generate embedding for query
