@@ -1,0 +1,29 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# VSCode settings
+.vscode/
+
+# macOS files
+.DS_Store
+
+# Logs
+*.log
+
+# Python packaging
+*.egg-info/
+dist/
+build/
+
+# Vercel local files
+.vercel/
